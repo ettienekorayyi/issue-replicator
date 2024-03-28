@@ -7,11 +7,11 @@ namespace Domain
 {
     public abstract class BaseEntity
     {
-        protected BaseEntity(int Id)
+        protected BaseEntity(Guid Id)
         {
             this.Id = Id;
         }
         
-        public int Id { get; private set; }
+        public Guid Id { get; private set; }
     }
 }

@@ -7,7 +7,8 @@ namespace Domain
 {
     public class Employee : BaseEntity
     {
-        public Employee(int id) : base(id)
+        /**/
+        public Employee(Guid id) : base(id)
         {
             
         }

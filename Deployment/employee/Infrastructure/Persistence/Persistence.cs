@@ -14,19 +14,19 @@ namespace Infrastructure.Persistence
         {
             if (context.Employee.Any()) return;
             var list = new List<Employee> {
-                new Employee(1) {
+                new Employee(Guid.NewGuid()) {
                      FirstName = "James",
                      LastName = "Contoso"
                 },
-                new Employee(2) {
+                new Employee(Guid.NewGuid()) {
                      FirstName = "Michael",
                      LastName = "Bourke"
                 },
-                new Employee(3) {
+                new Employee(Guid.NewGuid()) {
                      FirstName = "Roanoke",
                      LastName = "Tosse"
                 },
-                new Employee(4) {
+                new Employee(Guid.NewGuid()) {
                      FirstName = "Zeke",
                      LastName = "Chan"
                 },
